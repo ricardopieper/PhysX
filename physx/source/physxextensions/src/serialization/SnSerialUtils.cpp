@@ -25,7 +25,7 @@
 //
 // Copyright (c) 2008-2021 NVIDIA Corporation. All rights reserved.
 // Copyright (c) 2004-2008 AGEIA Technologies, Inc. All rights reserved.
-// Copyright (c) 2001-2004 NovodeX AG. All rights reserved.  
+// Copyright (c) 2001-2004 NovodeX AG. All rights reserved.
 
 #include "extensions/PxSerialization.h"
 #include "PxPhysicsVersion.h"
@@ -118,6 +118,8 @@ PxU32 getBinaryPlatformTag()
 	return sBinaryPlatformTags[14];
 #elif PX_UWP && PX_A64
 	return sBinaryPlatformTags[15];
+#elif PX_OSX && PX_ARM
+    return sBinaryPlatformTags[5];
 #else
 	#error Unknown binary platform
 #endif
