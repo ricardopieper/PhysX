@@ -1,6 +1,6 @@
 # NVIDIA PhysX SDK 4.1
 
-## This is a MacOS M1 fork of PhysX, it should not build in Intel Macs for now.
+## This is a MacOS M1 fork of PhysX. For that, use the mac-arm64-build branch.
 
 Copyright (c) 2021 NVIDIA Corporation. All rights reserved.
 
